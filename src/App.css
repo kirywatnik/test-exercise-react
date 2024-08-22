@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.select {
+    padding: 10px 5px;
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.city {
+    font-size: 20px;
+
+}
+
+.select:focus {
+    font-size: 20px;
+}

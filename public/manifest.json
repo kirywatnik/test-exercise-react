@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "React Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "google.png"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://www.npr.org/*",
+        "https://www.npr.org/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.npr.org/*",
+                "https://www.npr.org/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources":[
+        {
+            "resources": [
+                "content-script.css"
+            ],
+            "matches": [
+                "http://www.npr.org/*",
+                "https://www.npr.org/*"
+            ]
+        }
+    ]
+}

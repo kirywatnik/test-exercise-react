@@ -1,0 +1,36 @@
+button {
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    padding: 0.5em;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: monospace;
+    transition: background 0.15s ease-in-out;
+    z-index: 2;
+}
+button:hover {
+    background: rgb(97, 49, 49);
+}
+.noblock{
+    display: none;
+}
+.block {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 40%;
+    left: 40%;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
